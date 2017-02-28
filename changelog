@@ -1,0 +1,16 @@
+SFP Changelog:
+
+	24 Feb 17 - Moved 'Register to Vote' and 'Vincent Fort' buttons to the same line on sidebar
+	24 Feb 17 - Removed 'DONATE TO OUR REVOLUTION' button from sidebar
+	24 Feb 17 - Moved 'Phonebank for Progressive Candidates' and 'Run for Office' buttons to the same line on sidebar
+	24 Feb 17 - Moved 'Our Revolution' and 'Justice Democrats' buttons to same line on sidebar
+	24 Feb 17 - Renamed 'Phonebank for Progressive Candidates' to 'Phonebank' due to formatting issues
+	24 Feb 17 - Moved 'Volunteer Sign-Up Forms' and 'Community Guidelines' buttons to same line on sidebar
+	24 Feb 17 - Renamed 'Volunteer Sign-Up Forms' to 'Volunteer Sign-ups' due to formatting issues
+	24 Feb 17 - Renamed 'Community Guidelines' to 'Guidelines' due to formatting issues
+	24 Feb 17 - Changed 'People feel the burn' subscription counter label to 'Berners'
+	24 Feb 17 - Left-adjusted subreddit theme, and subreddit flair text
+	24 Feb 17 - Fixed Upvote and Downvote Arrows with RES Nightmode
+	24 Feb 17 - Fixed H2 'Right Banner Table' to stack elements
+	24 Feb 17 - Added H3 'Left Banner Table'
+	24 Feb 17 - Added hover highlighting for Banner Tables
