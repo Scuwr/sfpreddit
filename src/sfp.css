@@ -494,9 +494,9 @@ a {
 @media (max-width: 1399px){
 		#header-img {
 	    position: absolute;
-	    top: 30px;
+	    top: 40px;
 	    left: 50%;
-	    margin-left: 500px;
+	    margin-left: 400px;
 	    z-index: 1;
 	    /*ctrl-f activism day, hide snoo*/
 	    display: url(%%newsnoo%%);
