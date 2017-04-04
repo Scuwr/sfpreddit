@@ -409,8 +409,6 @@ span.pagename.redditname a {
 	.tabmenu li {
 		background-color: transparent;
 		margin: 0 !important;
-		height: 136px;
-		width: 102px;
 	 }
 
 .selected, .choice.primary {font-weight: 600;}
