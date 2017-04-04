@@ -479,14 +479,28 @@ a {
 
 /*** HEADER ***/
 
-#header-img {
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    margin-left: -550px;
-    z-index: 1;
-    /*ctrl-f activism day, hide snoo*/
-    display: url(%%newsnoo%%);
+@media (min-width: 1400px){
+		#header-img {
+	    position: absolute;
+	    top: 30px;
+	    left: 50%;
+	    margin-left: -500px;
+	    z-index: 1;
+	    /*ctrl-f activism day, hide snoo*/
+	    display: url(%%newsnoo%%);
+	}
+}
+
+@media (max-width: 1399px){
+		#header-img {
+	    position: absolute;
+	    top: 30px;
+	    left: 50%;
+	    margin-left: 500px;
+	    z-index: 1;
+	    /*ctrl-f activism day, hide snoo*/
+	    display: url(%%newsnoo%%);
+	}
 }
 
 body:not(.comments-page) .thing .title:visited {color: #331f6d;}
