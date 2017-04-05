@@ -28,10 +28,8 @@ h1.redditname a:hover {text-decoration: none;}
 }
 
 /* UPVOTE BIRDIE ANIMATIONS */
-.midcol {
-    overflow: visible;
-    position: relative;
-}
+.midcol {overflow: visible; position: relative;}
+
 .upmod:focus:after {
     content: '';
     position: absolute;
@@ -41,6 +39,7 @@ h1.redditname a:hover {text-decoration: none;}
     background: url(%%flying-sparrow%%);
     opacity:0; 
 }
+
 .upmod:focus:before {
     content: '';
     position: absolute;
@@ -50,15 +49,17 @@ h1.redditname a:hover {text-decoration: none;}
     background: url(%%flying-sparrow2%%);
     opacity:0; 
 }
+
 @keyframes upvote2 {
-0% { opacity:0; top: 0; left: 20px;}
-50% { opacity:1; }
-100% { opacity:0; top: -20px;  left: 0;}
+	0% { opacity:0; top: 0; left: 20px;}
+	50% { opacity:1; }
+	100% { opacity:0; top: -20px;  left: 0;}
 }
+
 @keyframes upvote {
-0% { opacity:0; top: 0; right:24px;}
-50% { opacity:1; }
-100% { opacity:0; top: -20px; right:0;}
+	0% { opacity:0; top: 0; right:24px;}
+	50% { opacity:1; }
+	100% { opacity:0; top: -20px; right:0;}
 }
 
 /*MODERATOR BOX RENAME*/
@@ -192,27 +193,27 @@ h1.redditname a:hover {text-decoration: none;}
 
 				
 
-				/* Flairs */
-				.flair {
-					border: none;
-                	border-radius: 5px 5px 5px 5px;				
-					font-size: 12px;
-					font-family: arial, sans-serif;
-					font-weight: none;
-					background-color: #A6A6A6;
-					color: #fff;
-					padding-left: 0px;
-					margin-right: inherit;
-				}
- 
+/* Flairs */
+.flair {
+	border: none;
+	border-radius: 5px 5px 5px 5px;				
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	font-weight: none;
+	background-color: #A6A6A6;
+	color: #fff;
+	padding-left: 0px;
+	margin-right: inherit;
+}
 
-				.flair.flair-aidan {
-				    background: #9932CC;
-				
-				}
-				.flair.flair-aidan:hover {
-				    text-shadow: black 0.1em 0.1em 0.2em;
-				}
+
+.flair.flair-aidan {
+    background: #9932CC;
+
+}
+.flair.flair-aidan:hover {
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
 
 
 				
@@ -3040,7 +3041,7 @@ html[lang="dm"] .toc ul {background: transparent;}
 /* Thermometer in sidebar */
 .side a[href="https://secure.actblue.com/contribute/page/reddit-for-bernie/"]:after {
     content: url(%%SmallBern%%);
-    margin-left: 60px;
+    margin: auto;
 }
 
 
@@ -3145,11 +3146,16 @@ html[lang="dm"] .toc ul {background: transparent;}
     color:#fff;
 }
 
-@keyframes rainbow {0% {color:red;}14% {color:orange;}28% {color:yellow;}42% {color:green;}56% {color:blue;}70% {color:#4B0082;}84% {color:purple;}}
-@-moz-keyframes rainbow {0% {color:red;}14% {color:orange;}28% {color:yellow;}42% {color:green;}56% {color:blue;}70% {color:#4B0082;}84% {color:purple;}}
-@-webkit-keyframes rainbow {0% {color:red;}14% {color:orange;}28% {color:yellow;}42% {color:green;}56% {color:blue;}70% {color:#4B0082;}84% {color:purple;}}
-.linkflair-mod2 .linkflairlabel {color:red; -webkit-animation:rainbow 4s linear infinite; -moz-animation:rainbow 4s linear infinite; animation:rainbow 4s linear infinite; background-color: #66FFFF ;}
+.linkflair-mod2 .linkflairlabel {
+	color: white;
+	background-color: #EA504E ;
+}
 body:not(.moderator) .flairsample-left .linkflair-mod2 { display: none; }
+
+.linkflair-mod2 .linkflairlabel + a {
+	font-weight: bold;
+	color: black;
+}
 
 /*---Outline removed comments---*/
 .comment.spam {
