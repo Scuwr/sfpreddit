@@ -1,6 +1,5 @@
 /*--------------------------------------------------------------------------
 		/r/SandersForPresident Theme -- Go Bernie! 
-		Version 2.0
         Initial Modification done by /u/AvadaKedavra03 for /r/NewEngland4Sanders
         Follup Modifications done in part by /u/AvadaKedavra03, /u/csm725, /u/scriggities and /u/Vermonty_Python with help from /u/gavin19, /u/mvartan and /u/Jakudk. 
 		Developer Version
@@ -9,30 +8,22 @@
 		/u/Scuwr 24 February 2017
 --------------------------------------------------------------------------*/
 
-/*SUBREDDIT NAME*/
+/* SUBREDDIT NAME */
+h1.redditname:before {font-size: 14px; content: "Thank you for visiting"; display: block;}
+h1.redditname a:before {content: "r/";}
+h1.redditname a {color: #2a3f4d; font-size: 25px;}
+h1.redditname a:hover {text-decoration: none;}
 
-h1.redditname { font-size: 28px; width: 300px; text-align: center; padding: 2px 0 25px 0;}
-h1.redditname a { color: #2a3f4d; font-weight: normal; }
-h1.redditname a:hover { color: #464646; text-decoration: none; }
-.side .redditname a:before { content: "r/"; }
-h1.redditname:before { font-size: 14px; content: "Thank you for visiting"; display: block; font-weight: normal; }
-
-
-/*Reminder to read our rules when submitting */
 /* Adds text to the submission page*/
 #link-desc:after, #text-desc:after {
     display: block;
-    font-weight: bold; /*Delete this line if you don't want bold text*/
-    color: #EA504E; /*You could also change it to something more attention grabbing*/
+    color: #EA504E;
     content: "SandersForPresident is a moderated community geared toward political activism and grassroots organizing. Please read our Community Guidelines before posting.";
-    font-size: 16px;
-} 
+}
 
 #title-field .roundfield-content:after {
     content: "If you are posting a link to an article or video, please USE THE EXACT TITLE of the article/video. Link posts with altered titles WILL be removed.";
     color: #EA504E;
-    font-weight: bold;
-    text-decoration: none;
     text-transform: none;
 }
 
@@ -46,7 +37,6 @@ h1.redditname:before { font-size: 14px; content: "Thank you for visiting"; displ
     position: absolute;
     height: 20px;
     width: 20px;
-    -webkit-animation: 1s upvote;
     animation: 1s upvote;
     background: url(%%flying-sparrow%%);
     opacity:0; 
@@ -56,57 +46,20 @@ h1.redditname:before { font-size: 14px; content: "Thank you for visiting"; displ
     position: absolute;
     height: 20px;
     width: 20px;
-    -webkit-animation: 1s upvote2;
     animation: 1s upvote2;
     background: url(%%flying-sparrow2%%);
     opacity:0; 
-}
-@-webkit-keyframes upvote2 {
-0% { opacity:0; top: 0;left: 20px; }
-50% { opacity:1;  }
-100% { opacity:0; top: -20px; left: 0;}
 }
 @keyframes upvote2 {
 0% { opacity:0; top: 0; left: 20px;}
 50% { opacity:1; }
 100% { opacity:0; top: -20px;  left: 0;}
 }
-@-webkit-keyframes upvote {
-0% { opacity:0; top: 0; right:24px; }
-50% { opacity:1;   }
-100% { opacity:0; top: -20px; right:0;}
-}
 @keyframes upvote {
 0% { opacity:0; top: 0; right:24px;}
 50% { opacity:1; }
 100% { opacity:0; top: -20px; right:0;}
 }
-/* END UPVOTE ANIMATION */
-
-/*SIDEBAR MAGA */
-/*.side::before {
-    display: block;
-    content: "";
-    padding-top: 190px;
-    padding-bottom: 0px;
-    background: url(%%MAGA%%) no-repeat;
-    border-radius: 5px 5px 5px 5px;
-    background-size:contain;
-    background-size:300px;
-}
-/*END SIDEBAR IMAGE*/
-
-/*SUBREDDIT NAME*/
-.titlebox h1.redditname a {
-    content: "";
-    font-size: 0;
-}
-
-.titlebox h1.redditname a::before {
-    font-size: 25px;
-    content:"r/SandersForPresident";
-}
-/*END SUBREDDIT NAME*/
 
 /*MODERATOR BOX RENAME*/
 .sidecontentbox .helplink + .title h1 {font-size: 0}
@@ -971,7 +924,6 @@ body:not(.search-page) .menuarea {
 
 .search-page #search input[type="text"] {
 	background: none;
-	border: medium none;
 	font-size: 27px;
 	width: 100% !important;
 	position: relative;
@@ -980,6 +932,10 @@ body:not(.search-page) .menuarea {
  }
 
 .search-page .raisedbox h4 {display: none;}
+
+.search-page: #previoussearch label {
+	top: 100px;
+}
 
 .search-summary {display: none}
 
@@ -1485,9 +1441,6 @@ body:not(.comments-page) div.content .entry {
 
 .comments-page .link {padding: 20px;}
 
-/*IMAGE SIDEBAR SUB TITLE*/
-.res h1.redditname {overflow: visible;}
-
 /*LINK SCORES TYPE*/
 .link .score.likes {color: #FF5F3F;}
 
@@ -1743,7 +1696,7 @@ h2 {
 	text-indent: -99999px;
 	background-repeat: no-repeat;
  }
-	span.pagename.redditname a:hover {opacity: 0.8}
+ span.pagename.redditname a:hover {opacity: 0.8}
 
 .pagename {font-size: 0px;}
 
@@ -1826,12 +1779,6 @@ span.totalvotes {
 .linkinfo .totalvotes {font-size: 100%;}
 
 /* reddit name on sidebar below search box */
-.titlebox h1.redditname {
-	width: 100%;
-	text-align: center;
- }
-
-.titlebox .redditname {height: 25px}
 
 .res .titlebox .fancy-toggle-button {
 	display: inline-block;
